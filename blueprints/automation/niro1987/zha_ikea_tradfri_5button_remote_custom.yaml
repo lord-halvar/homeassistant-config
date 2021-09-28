@@ -52,12 +52,12 @@ blueprint:
       selector:
         action:
       default: []
-    power_long:
-      name: Long Press - Power Button
-      description: The action to perform on Long Press of the Power Button
-      selector:
-        action:
-      default: []
+#    power_long:
+#      name: Long Press - Power Button
+#      description: The action to perform on Long Press of the Power Button
+#      selector:
+#        action:
+#      default: []
     dimup_long:
       name: Long Press - Dim Up Button
       description: The action to perform on Long Press of the Dim Up Button
@@ -101,10 +101,10 @@ action:
         sequence: !input power_short
 
       # Long-Press on the power button.
-      - conditions:
-          - condition: template
-            value_template: '{{ trigger.event.data.command == "move_to_level_with_on_off" }}'
-        sequence: !input power_long
+#      - conditions:
+#          - condition: template
+#            value_template: '{{ trigger.event.data.command == "move_to_level_with_on_off" }}'
+#        sequence: !input power_long
 
       # Short-Press on the dim-up button.
       - conditions:
