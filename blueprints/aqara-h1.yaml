@@ -8,7 +8,7 @@ blueprint:
       description: Aqara switch to use
       selector:
         entity:
-          domain: switch
+          domain: sensor
           integration: mqtt
           multiple: false
     single_left:
